@@ -47,8 +47,8 @@ void AhoCorasick(){
             for (int d = 0; d < k; ++d){
                 if(t[u].to[d]!=-1){
                     continue;
-                    t[u].to[d] = t[t[u].link].to[d];
                 }
+                t[u].to[d] = t[t[u].link].to[d];
             }
             q.push(u);
         }
